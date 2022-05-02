@@ -1,5 +1,4 @@
-#importするよ
-#今回はnextcodeではなくdiscord.pyを使う
+#Made By start
 import discord
 import keep_alive
 import os
@@ -7,7 +6,6 @@ import random
 import asyncio
 from spammessage import spammessage
 
-#Global変数を定義するよ
 intents = discord.Intents.default()
 intents.members = True
 client  = discord.Client(intents=intents)
@@ -18,7 +16,7 @@ channelname = "作りたいchannel名"
 @client.event
 async def on_ready():
   print("Bot Ready!")
-  await client.change_presence(activity=discord.Game(name="made by start | Vortex JP"))
+  await client.change_presence(activity=discord.Game(name="made by start | JP"))
 
 @client.event
 async def on_message(message):
